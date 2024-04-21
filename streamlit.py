@@ -2,7 +2,7 @@
 
 import pandas as pd
 import plotly.express as px
-import streamlit as st
+#import streamlit as st
 import altair as alt
 
 df = pd.read_csv('edit.csv')
