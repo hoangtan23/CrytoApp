@@ -2,7 +2,7 @@
 
 import pandas as pd
 import plotly.express as px
-#import streamlit as st
+import streamlit as st
 import altair as alt
 
 df = pd.read_csv('edit.csv')
@@ -27,10 +27,10 @@ Created with ❤️ by Tran Hoang Tan.
 col1, col2 = st.columns((6,4))
 
 with col1:
- st.markdown('Market Cap Top 200 Coin')
- #fig = px.treemap(df, path=[px.Constant("Market_cap"), 'Coin'], values='Market_cap',color_continuous_scale='RdBu')
+    st.markdown('Market Cap Top 200 Coin')
+    fig = px.treemap(df, path=[px.Constant("Market_cap"), 'Coin'], values='Market_cap',color_continuous_scale='RdBu')
 
- #st.plotly_chart(fig, theme="streamlit")
+    st.plotly_chart(fig, theme="streamlit")
 
 
 with col2:
